@@ -1,0 +1,32 @@
+.carousel
+{
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.jcarousel a
+{
+    font-size: 23px;
+    text-decoration: none;
+    vertical-align: top;
+    margin-top: 12px;
+}
+
+.jcarousel ul
+{
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li
+{
+    float: left;
+    width: 200px;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2.0" method="install">
+    <name>Слайдшоу</name>
+    <author>SmartMax</author>
+    <creationDate>20.05.2014</creationDate>
+    <copyright>Copyright (C) 2014 All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>im.smartmax@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>3.2.0</version>
+    <description></description>
+    <files>
+        <filename module="mod_slideshow">mod_slideshow.php</filename>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+        <filename>mod_slideshow.xml</filename>
+        <filename>helper.php</filename>
+    </files>
+    <params>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="slideshow_type" type="radio" default="0" label="Откуда берем:" >
+                    <option value="0">FTP</option>
+                    <option value="1">Удаленно</option>
+                </field>
+                <field name="slideshow_image" type="radio" default="jpg" label="Расширение (Удаленно):" >
+                    <option value="png">PNG</option>
+                    <option value="gif">GIF</option>
+                    <option value="jpg">JPG</option>
+                    <option value="jpeg">JPEG</option>
+                    <option value="bmp">BMP</option>
+                </field>
+                <field name="slideshow_link" type="text" default="" label="Адрес папки:"/>
+            </fieldset>
+        </fields>
+    </config>
+    </params>
+</extension>
